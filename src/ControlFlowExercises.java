@@ -64,3 +64,13 @@ public class ControlFlowExercises {
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
 
 
+//    Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+// System.out.print("Please enter the length of the room: ");
+//         int num = sc.nextInt();
+//         System.out.println(num);
+
+
