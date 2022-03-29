@@ -71,33 +71,83 @@ public class ControlFlowExercises {
 
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
 //        Display a table of squares and cubes from 1 to the value entered.
+//        String choice = "y";
+//
+//        while(choice.equalsIgnoreCase("y"))
+//        {
+//            // get the input from the user
+//            System.out.println("Enter an Integer: ");
+//            int integerNext = sc.nextInt();
+//
+//            System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
+//            System.out.println("======" + "  " + "======" + "  " + "======");
+//
+//            for(int i = 1; i <= integerNext; i++)
+//            {
+////                i = integerNext;
+//                int numberSquared = (int) Math.pow(i, 2);
+//                int numberCubed = (int) Math.pow (i, 3);
+//
+//                String message = "\n" + i + "       " + numberSquared + "       " + numberCubed;
+//
+//                System.out.println(message);
+//                System.out.println();
+//
+//            }
+//                // see if the user wants to continue
+//                System.out.print("Continue? (y/n): ");
+//                choice = sc.next();
+//                System.out.println();
+//        }
+
+//        Convert given number grades into letter grades.
+//
+//        Prompt the user for a numerical grade from 0 to 100.
+//        Display the corresponding letter grade.
+//        Prompt the user to continue.
+//        Assume that the user will enter valid integers for the grades.
+//        The application should only continue if the user agrees to.
+//        Grade Ranges:
+
+//        A : 100 - 88
+//        B : 87 - 80
+//        C : 79 - 67
+//        D : 66 - 60
+//        F : 59 - 0
+
+        //welcome the user
+        System.out.println("Welcome to the Letter Grade Conversion Project");
+        System.out.println(); //print a blank line
+
         String choice = "y";
+        while(choice.equalsIgnoreCase("y")) {
 
-        while(choice.equalsIgnoreCase("y"))
-        {
-            // get the input from the user
-            System.out.println("Enter an Integer: ");
-            int integerNext = sc.nextInt();
+        //  get input from user
+            System.out.println("Enter Numeric Grade:\t\t");
+            double score = sc.nextDouble();
 
-            System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
-            System.out.println("======" + "  " + "======" + "  " + "======");
+        // convert user numeric grade into letter grade
+        char userGrade = 'F';
+        if(score >= 88)
+            userGrade = 'A';
+        else if(score >= 80)
+            userGrade = 'B';
+        else if(score >= 67)
+            userGrade = 'C';
+        else if(score >= 60)
+            userGrade = 'D';
 
-            for(int i = 1; i <= integerNext; i++)
-            {
-//                i = integerNext;
-                int numberSquared = (int) Math.pow(i, 2);
-                int numberCubed = (int) Math.pow (i, 3);
+        // display conversion result
+        String message = "Equivalent Letter Grade:\t" + userGrade;
+        System.out.println(message);
 
-                String message = "\n" + i + "       " + numberSquared + "       " + numberCubed;
-
-                System.out.println(message);
-                System.out.println();
-
-            }
-                // see if the user wants to continue
-                System.out.print("Continue? (y/n): ");
-                choice = sc.next();
-                System.out.println();
+        // see if the user wants to continue
+        System.out.print("\nContinue? (y/n):\t\t");
+        choice = sc.next();
+        System.out.println();
+//        end while loop
         }
+//        end main()
     }
+//    end class GradeConverter
 }
