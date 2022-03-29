@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 //        int i = 5;
 //        while (i <= 15){
 //            System.out.println(i);
@@ -44,33 +47,57 @@ public class ControlFlowExercises {
 //        Write a program that prints the numbers from 1 to 100.
 //        For multiples of three: print “Fizz” instead of the number.
 
-//        for (int i = 1; i < 100; i++) {
-//            System.out.println(i);
+//        for (int i = 1; i <= 100; i++) {
+////            System.out.println(i);
 //        if(i % 3 == 0) {
 //            System.out.println("Fizz");
+//        } else {
+//            System.out.println(i);
 //        }
 //    }
 //}}
 
 //        For the multiples of five: print “Buzz”.
-    for (int i = 1; i <= 100; i++) {
-             System.out.println(i);
-        if(i % 5 == 0) {
-             System.out.println("Buzz");
-        }
-    }
-    }}
+//    for (int i = 1; i <= 100; i++) {
+////             System.out.println(i);
+//        if(i % 5 == 0) {
+//             System.out.println("Buzz");
+//        } else {
+//            System.out.println(i);
+//        }
+//      }
+//    }
+//}
 
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
-
-
-//    Prompt the user to enter an integer.
 //        Display a table of squares and cubes from 1 to the value entered.
-//        Ask if the user wants to continue.
-//        Assume that the user will enter valid data.
-//        Only continue if the user agrees to.
-// System.out.print("Please enter the length of the room: ");
-//         int num = sc.nextInt();
-//         System.out.println(num);
+        String choice = "y";
 
+        while(choice.equalsIgnoreCase("y"))
+        {
+            // get the input from the user
+            System.out.println("Enter an Integer: ");
+            int integerNext = sc.nextInt();
 
+            System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
+            System.out.println("======" + "  " + "======" + "  " + "======");
+
+            for(int i = 1; i <= integerNext; i++)
+            {
+//                i = integerNext;
+                int numberSquared = (int) Math.pow(i, 2);
+                int numberCubed = (int) Math.pow (i, 3);
+
+                String message = "\n" + i + "       " + numberSquared + "       " + numberCubed;
+
+                System.out.println(message);
+                System.out.println();
+
+            }
+                // see if the user wants to continue
+                System.out.print("Continue? (y/n): ");
+                choice = sc.next();
+                System.out.println();
+        }
+    }
+}
