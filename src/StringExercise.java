@@ -8,17 +8,12 @@ public class StringExercise {
 //        one print statement for each output example.
 //
 //
-//        String message = "We don't need no education";
-        if ("We don't need no education".equals("We don't need no thought control")) {
-            System.out.println("Strings are equal");
-        } else {
-            System.out.println("Strings are not equal");
-        }
-
-//        String input = new String ("Check "this" out!, "s inside of "s!");
-//        input.startsWith("Check");
-//        System.out.println("Return input");
-//        System.out.println(input.trim());
+//        String output = "We don't need no education\n";
+//        output += "We don't need no thought control";
+//        System.out.println(output);
+//
+//          String output2 = "Check \"this\" out!, \"s inside of \"s!";
+//        System.out.println(output2);
 
         if ("In windows, the main drive is usually C:".equals("In windows, the main drive is usually C:")) {
             System.out.println("Strings are equal");
