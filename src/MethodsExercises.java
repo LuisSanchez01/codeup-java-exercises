@@ -18,6 +18,9 @@ import java.util.Scanner;
 
 public class MethodsExercises {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        userFactorialInput(sc);
+    }
 
         // initializing variables
 //        int num1 = 10, num2 = 20, sum = 0;
@@ -94,22 +97,79 @@ public class MethodsExercises {
 //        System.out.println("Remainder = " + mod);
 
 
-        int first, second, add, subtract, multiply;
-        float divide;
-        Scanner scanner = new Scanner(System.in);
+//        int first, second, add, subtract, multiply;
+//        float divide;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter Two Numbers : ");
+//        first = scanner.nextInt();
+//        second = scanner.nextInt();
+//
+//        add = first + second;
+//        subtract = first - second;
+//        multiply = first * second;
+//        divide = (float) first / second;
+//
+//        System.out.println("Sum = " + add);
+//        System.out.println("Difference = " + subtract);
+//        System.out.println("Multiplication = " + multiply);
+//        System.out.println("Division = " + divide);
 
-        System.out.print("Enter Two Numbers : ");
-        first = scanner.nextInt();
-        second = scanner.nextInt();
 
-        add = first + second;
-        subtract = first - second;
-        multiply = first * second;
-        divide = (float) first / second;
+//        Bonus
+//
+//        Create your multiplication method without the * operator (Hint: a loop might
+//        be helpful).
+//        Do the above with recursion.
 
-        System.out.println("Sum = " + add);
-        System.out.println("Difference = " + subtract);
-        System.out.println("Multiplication = " + multiply);
-        System.out.println("Division = " + divide);
-    }
-}
+        // TODO: use recursion to print out a given number up through 100
+//        public static int countTo100(int num) {
+//            System.out.println(num);
+//            if (num == 100) {
+//                return 1;
+//            }
+//            public static void main (String[] args){
+//                countTo100(1);
+//            }
+
+        //    TODO: use recursion to add all numbers up from 1 to a given number
+//          public static int addNums(int num) {
+//              if (num == 1) {
+//                  return 1;
+//              }
+//              return num + addNums(num - 1);
+//          }
+//          public static void main(String[] args) {
+//              System.out.println(addNums(10));
+//          }
+//
+//
+
+        public static long calculateFactorial ( int num){
+            int output = 1;
+            for (int i = 1; i <= num; i += 1) {
+                output *= i;
+            }
+            return output;
+        }
+
+        public static void userFactorialInput (Scanner sc) {
+
+            String choice = "y";
+            System.out.println("Enter a number from 1-10:");
+            int userInput = sc.nextInt();
+            System.out.println(calculateFactorial(userInput));
+            System.out.println("Do you want to continue y/n ?");
+            choice = sc.next();
+            System.out.println();
+        }}
+
+
+
+
+
+
+
+
+
+
