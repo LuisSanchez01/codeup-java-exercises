@@ -15,14 +15,20 @@ public class StringExercise {
             System.out.println("Strings are not equal");
         }
 
-//        String input = "Check "this" out!, "s inside of "s!";
+//        String input = new String ("Check "this" out!, "s inside of "s!");
+//        input.startsWith("Check");
+//        System.out.println("Return input");
+//        System.out.println(input.trim());
 
         if ("In windows, the main drive is usually C:".equals("In windows, the main drive is usually C:")) {
             System.out.println("Strings are equal");
         }
 
-//        I can do backslashes \, double backslashes \\,
-//        and the amazing triple backslash \\\!
 
+        String Str = new String(" I can do backslashes \\, double backslashes \\\\,\n" +
+                "// and the amazing triple backslash \\\\\\!");
+
+        System.out.print("Return string:");
+        System.out.println(Str.toLowerCase());
     }
 }

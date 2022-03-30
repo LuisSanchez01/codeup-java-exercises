@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Bob {
     public static void main(String[] args) {
+
 //        Bob is a lackadaisical teenager. In conversation, his responses are very
 //        limited.
 //
@@ -15,16 +16,19 @@ public class Bob {
 //        Write the Java code necessary so that a user of your command line
 //        application can have a conversation with Bob.
 
-        Scanner sc = new Scanner(System.in);
-        String choice = "y";
-        while (choice.equalsIgnoreCase("y")) {
-
-            //  get input from user
-            System.out.println("Enter your question:\t\t");
-            double question = sc.nextDouble();
-
-            // convert user numeric grade into letter grade
+//        Scanner sc = new Scanner(System.in);
+//        String choice = "y";
+//        while (choice.equalsIgnoreCase("y")) {
+//
+//            //  get input from user
+//            System.out.println("Enter your question:\t\t");
+//            double question = sc.nextDouble();
 
 
+            }
         }
-    }}
+
+
+
+
+
