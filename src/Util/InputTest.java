@@ -12,6 +12,12 @@ public class InputTest {
         System.out.println("input.getInt = " + input.getInt());
 
         System.out.println("input = " + input.getInt(5, 10));
+
+
+        System.out.println("input.getDouble() = " + input.getDouble());
+
+
+        System.out.println("input.getDouble() = " + input.getDouble(10.23, 19.9823));
     }
 
 }

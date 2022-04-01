@@ -52,12 +52,21 @@ public class Input {
             return userInput;
         } catch (Exception e) {
             System.out.println("Must enter a valid double:");
-
+            input.nextLine();
+            return getDouble();
         }
     }
 
     public double getDouble(double min, double max) {
+        System.out.println("Please input a number between " + min + " and " + max);
 
+        double userInput = getDouble();
+
+        if (userInput > max || userInput < min ) {
+            return getDouble(min, max);
+        }
+
+        return userInput;
     }
 
 
