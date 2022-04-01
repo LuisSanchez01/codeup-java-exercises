@@ -1,11 +1,11 @@
 public class Dish {
-//   public static printSummary void {
-//
-//
-//       class Dish() {
-//           private String nameOfDish
-//           private int costInCents
-//           private boolean wouldRecommend
-//       }
-//    }
+
+   public static void printSummary {
+
+           private String nameOfDish
+           private int costInCents
+           private boolean wouldRecommend
+
+       }
+    }
 }
