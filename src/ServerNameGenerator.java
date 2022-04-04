@@ -27,8 +27,21 @@ public class ServerNameGenerator {
         System.out.println(adjectives[8]);
         System.out.println(adjectives[9]);
 
+//        Create adjectives and nouns strings
+
 //        Only showing memory location but not the name
-
-
     }
-}
+// javier's answer
+        private static String getString(String[] stringArray){
+            return stringArray[(int) Math.ceil(Mth.random() * stringArray.length - 1)];
+        }
+
+    public static void main(String[] args) {
+        ServerNameGenerator serverNameGenerator = new ServerNameGenerator();
+        System.out.println("Here is you server name:");
+        String noun = getString(serverNameGenerator.getNouns());
+        String adjective = getString(serverNameGenerator.getAdjectives());
+        System.out.println("%s-%s", adjective, noun);
+    }
+    }
+
