@@ -7,3 +7,5 @@ public class BirdTest {
         cardinal.move();
     }
 }
+
+
