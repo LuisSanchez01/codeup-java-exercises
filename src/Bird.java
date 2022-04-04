@@ -28,4 +28,13 @@ public class Bird {
     public void move(){
         System.out.println("Flap flap");
     }
+
+    public  void Bird() {
+
+    }
+
+    public Bird(String nameOfThisBird, boolean canItFly){
+        this.name = nameOfThisBird;
+        this.canFly = canItFly;
+    }
 }

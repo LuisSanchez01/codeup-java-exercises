@@ -1,6 +1,7 @@
 public class Vehicle {
 
     protected void makeNoise() {
+
     }
 }
 
