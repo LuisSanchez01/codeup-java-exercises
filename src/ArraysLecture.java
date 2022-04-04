@@ -20,8 +20,31 @@ public class ArraysLecture {
 
         // array initializer syntax
 
-        String[] synonymsOfWeird = {"strange", "bizarre", "uncanny", "odd",
-        "peculiar", "uncommon"};
-        System.out.println(synonymsOfWeird[2]);
+//        String[] synonymOfWeird = {"strange", "bizarre", "uncanny", "odd",
+//        "peculiar", "uncommon"};
+//        System.out.println(synonymsOfWeird[2]);
+//        synonymsOfWeird[0] = "extraordinary";
+//        System.out.println(synonymsOfWeird[0]);
+//        System.out.println(synonymsOfWeird.length);
+//
+//        for(int i = 0; i < numbers.length; i++){
+//            System.out.println("The number at index " + i + " is " +
+//                    synonymsOfWeird[i]);
+
+//        enhanced for loop
+//        for (String synonymOfWeird : synonymOfWeird){
+//            System.out.println(synonymOfWeird);
+
+        }
+
+//        Create an array of five bytes using either array variable
+//        declaration or array initialization syntax. Use either a for
+//        loop or an enhanced for loop to output the values to the terminal.
+
+
+
+
+
+
     }
-}
+
