@@ -1,10 +1,18 @@
 public class Person {
     private String name;
 
+    public String getName() {
+        return name;
+    }
 
+    public Person(String name) {
+        this.name = name;
+    }
 
-
-//    public String getName() {
+    public void setName(String name) {
+        this.name = name;
+    }
+    //    public String getName() {
 ////TODO: return the person's name
 //        System.out.println(name);
 //    }

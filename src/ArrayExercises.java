@@ -10,15 +10,29 @@ public class ArrayExercises {
 //        the array.
 
         // using the array initializer syntax
-        String[] bulls = {"Michael", "Scottie", "Dennis"};
+//        Person[] bulls = {"Michael", "Scottie", "Dennis"};
+//
+//        System.out.println(Arrays.toString(bulls));
+//        System.out.println(bulls.length); // 3
+//
+//        System.out.println(bulls[0]); // "Michael"
+//        System.out.println(bulls[1]); // "Scottie"
+//        System.out.println(bulls[2]); // "Dennis"
 
-        System.out.println(bulls.length); // 3
+        Person[] person = new Person[3];
+        person[0] = new Person("Michael");
+        person[1] = new Person("Scottie");
+        person[2] = new Person("Dennis");
+        System.out.println(person[0]);
+        System.out.println(person[1]);
+        System.out.println(person[2]);
+    } //end of main
 
-        System.out.println(bulls[0]); // "Michael"
-        System.out.println(bulls[1]); // "Scottie"
-        System.out.println(bulls[2]); // "Dennis"
+    public static Person[] addPerson(Person[] pArray, Person newPerson) {
+//declare the new array, one space bigger
 
+    }
 
 
     }
-}
+
