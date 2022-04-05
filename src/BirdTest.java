@@ -6,7 +6,7 @@ public class BirdTest {
 //        cardinal.makeNoise();
 //        cardinal.move();
 
-        Bird theBird = new Bird();
+//        Bird theBird = new Bird();
 
 
     }
