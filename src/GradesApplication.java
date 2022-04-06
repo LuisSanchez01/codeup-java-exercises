@@ -11,22 +11,22 @@ public class GradesApplication {
         Student student1 = new Student("Jimmy");
         student1.addGrade(87);
         student1.addGrade(79);
-        student1.addGrade(80);
+        student1.addGrade(67);
 
         Student student2 = new Student("Jaime");
         student2.addGrade(93);
-        student2.addGrade(78);
+        student2.addGrade(77);
         student2.addGrade(80);
 
         Student student3 = new Student("James");
-        student3.addGrade(87);
+        student3.addGrade(58);
         student3.addGrade(79);
-        student3.addGrade(80);
+        student3.addGrade(66);
 
         Student student4 = new Student("Jose");
-        student4.addGrade(87);
-        student4.addGrade(79);
-        student4.addGrade(80);
+        student4.addGrade(86);
+        student4.addGrade(72);
+        student4.addGrade(81);
 
         System.out.println(student3.getGrades());
         System.out.println(student4.getGrades());
