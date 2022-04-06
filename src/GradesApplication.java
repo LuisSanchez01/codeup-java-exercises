@@ -1,9 +1,6 @@
 import grades.Student;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class GradesApplication {
     public static void main(String[] args) {
@@ -61,18 +58,29 @@ public class GradesApplication {
 
         System.out.println("Welcome!\n" +
                 "\n" +
-//                "Here are the GitHub usernames of our students:\n" +
-//                "\n" +
-//                "|userJimmy1| |userJaime2| |userJames3| |userJose4|\n" +
-//                "\n" +
+                "Here are the GitHub usernames of our students:\n" +
+                "\n" +
+                "|userJimmy1| |userJaime2| |userJames3| |userJose4|\n" +
+                "\n" +
                 "What student would you like to see more information on?");
 
-
-//        int a = in.nextInt();
-//        System.out.println("You entered integer " + a);
-//
-//        float b = in.nextFloat();
-//        System.out.println("You entered float " + b);
+//        public static void outputStudentInfo(String userInput, HashMap<String, Student> students){
+//            if (students.containsKey(userInput)){
+//                ArrayList<Integer> grades = students.get(userInput).getGrades();
+//                System.out.printf("Name: %s - GitHub Username: %s%n", students.get(userInput).getName() , userInput);
+//                System.out.printf("Current Average: %.2f%n", students.get(userInput).getGradeAverage());
+//                System.out.println("Grades:");
+//                for(int i = 0; i < grades.size(); i++){
+//                    if (i == grades.size() -1){
+//                        System.out.println(grades.get(i));
+//                    } else {
+//                        System.out.print(grades.get(i) + ", ");
+//                    }
+//                }
+//            } else {
+//                System.out.println("Sorry, no student found with username " + userInput);
+//            }
+//        }
         }
     }
 
