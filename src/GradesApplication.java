@@ -49,7 +49,15 @@ public class GradesApplication {
         Scanner in = new Scanner(System.in);
 
         String s = in.nextLine();
-        System.out.println("You entered string " + s);
+//        System.out.println("You entered string " + s + );
+
+        System.out.println("Welcome!\n" +
+                "\n" +
+                "Here are the GitHub usernames of our students:\n" +
+                "\n" +
+                "|userJimmy1| |userJaime2| |userJames3| |userJose4|\n" +
+                "\n" +
+                "What student would you like to see more information on?");
 
 
 //        int a = in.nextInt();
