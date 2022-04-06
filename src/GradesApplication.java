@@ -2,6 +2,7 @@ import grades.Student;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 
 public class GradesApplication {
@@ -45,6 +46,17 @@ public class GradesApplication {
         }
 
             System.out.println("Which student would you like to see more information about?");
+        Scanner in = new Scanner(System.in);
+
+        String s = in.nextLine();
+        System.out.println("You entered string " + s);
+
+
+//        int a = in.nextInt();
+//        System.out.println("You entered integer " + a);
+//
+//        float b = in.nextFloat();
+//        System.out.println("You entered float " + b);
         }
     }
 
