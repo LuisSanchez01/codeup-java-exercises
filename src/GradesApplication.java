@@ -44,19 +44,27 @@ public class GradesApplication {
 //
 //            Set<String> studentNames = studentsSet.keySet();
         }
-
+        System.out.println("");
             System.out.println("Which student would you like to see more information about?");
-        Scanner in = new Scanner(System.in);
+        System.out.println("");
+        Scanner scanner = new Scanner(System.in);
+        String userInput = scanner.nextLine();
 
-        String s = in.nextLine();
+        if (students.containsKey(userInput)){
+            System.out.printf("Name: %s = GitHub Username: %s%n", students.get(userInput).getName(), userInput);
+        } else {
+            System.out.println("Sorry, no student found with username " + userInput);
+        }
+
+//        String s = in.nextLine();
 //        System.out.println("You entered string " + s + );
 
         System.out.println("Welcome!\n" +
                 "\n" +
-                "Here are the GitHub usernames of our students:\n" +
-                "\n" +
-                "|userJimmy1| |userJaime2| |userJames3| |userJose4|\n" +
-                "\n" +
+//                "Here are the GitHub usernames of our students:\n" +
+//                "\n" +
+//                "|userJimmy1| |userJaime2| |userJames3| |userJose4|\n" +
+//                "\n" +
                 "What student would you like to see more information on?");
 
 
