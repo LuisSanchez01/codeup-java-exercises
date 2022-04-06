@@ -3,9 +3,18 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
-    public static void main(String[] args) {
-
+    public ArrayList<Integer> getGrades() {
+        return grades;
     }
+
+//    public static void main(String[] args) {
+//        Student student1 = new Student("Jimmy");
+//        student1.addGrade(87);
+//        student1.addGrade(79);
+//        student1.addGrade(80);
+//        System.out.println(student1.grades);
+//
+//    }
 
 //    ArrayList<Person> persons = new ArrayList<>();
 //            Person joe = new Person("Joe");
@@ -17,26 +26,32 @@ public class Student {
 //            for(Person person : persons){
 //        System.out.println(person.getName());
 //    }
-
-// ArrayList<Integer> gradesList = new ArrayList<>()
-//         gradesList.add(87);
-//         gradesList.add(67);
-//         gradesList.add(93);
-//         System.out.println(gradesList.get(1));
+    private String name;
+    private ArrayList<Integer> grades = new ArrayList<>();
 
 
-//    private double name;
-//    private double grades;
-//
-//    public Student(double name) {
-//        this.name = name;
-//    }
 
 
-//    // returns the student's name
-//    public String getName();
-//    // adds the given grade to the grades property
-//    public void addGrade(int grade);
-//    // returns the average of the students grades
-//    public double getGradeAverage();
+
+
+    public Student(String name) {
+        this.name = name;
+        this.grades = new ArrayList<>();
+    }
+
+
+    // returns the student's name
+    public String getName() {
+        return name;
+    }
+
+    // adds the given grade to the grades property
+    public void addGrade(int grade) {
+         this.grades.add(grade);
+    }
+
+    // returns the average of the students grades
+    public double getGradeAverage() {
+        return 0;
+    }
 }
