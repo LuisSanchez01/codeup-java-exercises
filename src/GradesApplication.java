@@ -44,7 +44,7 @@ public class GradesApplication {
 //            Set<String> studentNames = studentsSet.keySet();
         }
 
-            System.out.println("Would you like to see more information? y/n");
+            System.out.println("Which student would you like to see more information about?");
         }
     }
 
