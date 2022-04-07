@@ -16,15 +16,15 @@ public class Practice {
 //        9. Write an instance method in PetDog  called isTrained that returns the boolean value of the trained
 //    property.
 
-        public static double subtractTen (int n) {
-               int sum = n - 10;
-            System.out.println(subtractTen);
-        }
-
-        public static double average(int arr) {
-               int arr[] = {1, 2, 3, 4, 5};
-
-        }
+//        public static double subtractTen (int n) {
+//               int sum = n - 10;
+//            System.out.println(subtractTen);
+//        }
+//
+//        public static double average(int arr) {
+//               int arr[] = {1, 2, 3, 4, 5};
+//
+//        }
 
     }
 }
