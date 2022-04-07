@@ -20,12 +20,12 @@ public class Input {
     }
 
     public int getInt() {
+             String inputInt = this.getString();
          try {
-             int inputInt = input.nextInt();
-             return inputInt;
+
+             return Integer.parseInt(inputInt);
          } catch (Exception e) {
              System.out.println("Must enter a valid integer");
-             input.nextLine();
              return getInt();
          }
 
@@ -47,12 +47,11 @@ public class Input {
     public double getDouble() {
 
         try {
-            double userInput = input.nextDouble();
+            String userInput = this.getString();
 
-            return userInput;
+            return Double.parseDouble(userInput);
         } catch (Exception e) {
             System.out.println("Must enter a valid double:");
-            input.nextLine();
             return getDouble();
         }
     }
