@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Practice {
     public static void main(String[] args) {
 //        # Java Assessment Practice Problems
@@ -16,15 +18,37 @@ public class Practice {
 //        9. Write an instance method in PetDog  called isTrained that returns the boolean value of the trained
 //    property.
 
-//        public static double subtractTen (int n) {
-//               int sum = n - 10;
-//            System.out.println(subtractTen);
-//        }
+//        public static double subtractTen() {
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println("Please enter an integer");
+//            String userInput = scanner.nextLine();
 //
+//
+//        }
+
 //        public static double average(int arr) {
 //               int arr[] = {1, 2, 3, 4, 5};
 //
 //        }
+
+//        10. Create an interface named Companion. The Companion interface should
+//                specify an instance method named snuggle that has no arguments
+//                        and returns a String. Change your PetDog class so it
+//                implements the Companion interface. The implementation of the
+//        snuggle method on the PetDog class should return "name wants to snuggle",
+//        where name is the inherited instance property.
+//        11. Create a PetDogTest class, instantiate a PetDog, and verify that the
+//        snuggle method works correctly.
+//        12. In your Practice class, create a static method named multiplyAll.
+//                It should accept an integer and an ArrayList of integers. It
+//        should take the ArrayList argument and multiply all its elements by
+//        the value of the integer argument.
+//        12b. In your Pet class, create a static method named allSnuggle. It
+//        should accept an ArrayList of PetDog objects and output the result of
+//        calling the snuggle method on all of them. Create an ArrayList with
+//        at least three PetDog instances in the PetDogTest class. Call
+//        the allSnuggle method and pass it the ArrayList. Verify that
+//        the allSnuggle method works correctly.
 
     }
 }
